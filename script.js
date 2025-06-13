@@ -27,8 +27,6 @@ function atualizarTimer() {
 }
 
 
-
-
 // Ao clicar no botão inicial
 document.getElementById('botao-inicial').addEventListener('click', () => {
   document.getElementById('inicio').style.display = 'none';
