@@ -27,24 +27,7 @@ function atualizarTimer() {
 }
 
 
-// Emojis românticos flutuando
-function criarEmojiFlutuante() {
-  const emojis = ['❤️', '💖', '💘', '💜', '💞', '😍', '😘'];
-  const emoji = document.createElement('div');
-  emoji.classList.add('emoji');
-  emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
 
-  // Posicionar na lateral
-  const lado = Math.random() < 0.5 ? 'left' : 'right';
-emoji.style[lado] = `${Math.random() * 20 + 2}%`; // 2% a 22%
-  emoji.style.bottom = '0';
-
-  document.body.appendChild(emoji);
-
-  setTimeout(() => {
-    emoji.remove();
-  }, 4000);
-}
 
 // Ao clicar no botão inicial
 document.getElementById('botao-inicial').addEventListener('click', () => {
